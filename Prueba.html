@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa para mi amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fdfd96; /* Amarillo Pastel */
+        }
+
+        h1 {
+            color: blue; /* Puedes cambiar el color del título */
+        }
+
+        /* Estilo para centrar la imagen horizontalmente */
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Estilo para el contenedor del botón */
+        .button-container {
+            margin-top: 20px; /* Espacio entre la imagen y el botón */
+            text-align: center; /* Centrar el botón horizontalmente */
+        }
+
+        button {
+            background-color: #c300ff; /* Color de fondo del botón */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #9000cc; /* Color de fondo del botón al pasar el ratón */
+        }
+
+        .hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenidoInicial">
+        <h1><span style="color: rgb(119, 0, 255);">FELIZ ANIVERSARIO CIELITO MIO<3</span></h1>
+        <h2><span style="color: #6200ff;">FELICES 8 MESES AMOR<3</span></h2>
+        <img src="https://i.pinimg.com/736x/9e/ea/21/9eea21eee36573faf580776f63866730.jpg" alt="Para mi amor">
+        <div class="button-container">
+            <button id="mostrarContenido">Tócame para la sorpresa</button>
+        </div>
+    </div>
+    
+    <div id="contenidoSorpresa" class="hidden-content">
+        <h3>Te hice un jueguito como sorpresita amor<3</h3>
+        <p>Espero que te encante demasiadisisimooooo<3</p>
+        <!-- Inserta el juego de Scratch aquí -->
+        <iframe src="https://scratch.mit.edu/projects/1027870930/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        document.getElementById("mostrarContenido").addEventListener("click", function() {
+            document.getElementById("contenidoInicial").style.display = "none"; // Ocultar contenido inicial
+            document.getElementById("contenidoSorpresa").style.display = "block"; // Mostrar contenido de sorpresa
+        });
+    </script>
+</body>
+</html>
